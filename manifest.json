@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Mollusk",
+  "description": "Checks URls for spoofing",
+  "version": "1.0",
+  "action": {
+    "default_icon": "mollusk.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["mollusk.js"]
+  }],
+  "permissions": ["activeTab"]
+}
